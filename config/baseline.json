@@ -1,0 +1,9 @@
+{
+ "milestone": "M1", "core_clock_hz": 100000000, "network_bps": 100000000,
+ "tx_vl_count": 1, "rx_vl_count": 1, "vlid": 1,
+ "src_mac": "02:00:00:00:00:01", "dst_mac": "03:00:00:00:00:01",
+ "src_ip": "192.168.1.1", "dst_ip": "192.168.1.2",
+ "src_port": 1000, "dst_port": 1001, "payload_min": 1, "payload_max": 1471,
+ "udp_zero_checksum": "reject", "ipv4_options": false, "ipv4_fragmentation": false,
+ "mac_boundary": "destination MAC through SN; FCS supplied and checked by external MAC"
+}

@@ -1,0 +1,1 @@
+read_verilog rtl/afdx_scheduled_tx.v rtl/afdx_bag_scheduler.v rtl/afdx_udp_tx.v; hierarchy -check -top afdx_scheduled_tx; proc; opt; check -assert; stat

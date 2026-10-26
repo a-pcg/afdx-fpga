@@ -1,0 +1,62 @@
+{
+  "application_lengths_unmodified": [
+    1,
+    16,
+    17,
+    18,
+    1471
+  ],
+  "frame_padding_only": "Ethernet PAD before SN; never application bytes",
+  "stimuli": "fixed time independent lanes, no per-batch drain",
+  "expected": "required packets in per-VL independent queues; may_drop is explicit pressure-only whole-frame subset; cancel forbidden after reset",
+  "plans": [
+    {
+      "episode": 0,
+      "end": 92936,
+      "initial_app_hold": 2000,
+      "seed": 20261019,
+      "reset_at": 0,
+      "pressure": false
+    },
+    {
+      "episode": 1,
+      "end": 92936,
+      "initial_app_hold": 2000,
+      "seed": 20261020,
+      "reset_at": 0,
+      "pressure": false
+    },
+    {
+      "episode": 2,
+      "end": 92936,
+      "initial_app_hold": 2000,
+      "seed": 20261021,
+      "reset_at": 0,
+      "pressure": false
+    },
+    {
+      "episode": 3,
+      "end": 49080,
+      "initial_app_hold": 24080,
+      "seed": 4,
+      "reset_at": 0,
+      "pressure": true
+    },
+    {
+      "episode": 4,
+      "end": 22000,
+      "initial_app_hold": 0,
+      "seed": 5,
+      "reset_at": 1000,
+      "pressure": false
+    },
+    {
+      "episode": 5,
+      "end": 10000,
+      "initial_app_hold": 1800,
+      "seed": 6,
+      "reset_at": 1600,
+      "pressure": false
+    }
+  ]
+}

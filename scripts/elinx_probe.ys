@@ -1,0 +1,1 @@
+read_verilog rtl/afdx_env_probe.v; synth_stratix -top afdx_env_probe -family eHiChip6 -vqm reports/probe.vqm; check -assert; stat

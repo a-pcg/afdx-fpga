@@ -1,0 +1,39 @@
+{
+  "late_copy": {
+    "inputs": [
+      [
+        0,
+        42
+      ],
+      [
+        0,
+        43
+      ],
+      [
+        1,
+        42
+      ]
+    ],
+    "observed_development_decisions": [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "at_most_once_satisfied": false
+  },
+  "startup": {
+    "stuck_network": "B",
+    "global_initialized": false,
+    "healthy_A_delivery_available": false
+  },
+  "classification": "KNOWN_LIMITATION_NOT_COMPLIANCE"
+}

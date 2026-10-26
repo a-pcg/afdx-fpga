@@ -1,0 +1,15 @@
+{
+  "core_clock_hz_target": 100000000,
+  "byte_enable_period": 8,
+  "line_rate_bps_in_model": 100000000,
+  "frame_min_with_fcs": 64,
+  "frame_max_with_fcs": 1518,
+  "client_min": 60,
+  "client_max": 1514,
+  "queue_slots_per_direction": 2,
+  "slot_stride_bytes": 2048,
+  "preamble_hex": "55555555555555d5",
+  "fcs_byte_order": "little-endian",
+  "ifg_min_octets": 12,
+  "phy_interface": "octet model; no MII/RMII/RGMII pin adapter"
+}

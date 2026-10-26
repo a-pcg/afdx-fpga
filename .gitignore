@@ -1,0 +1,32 @@
+# Generated build/simulator state
+**/work/
+**/obj/
+**/obj_dir/
+**/__pycache__/
+**/db/
+**/incremental_db/
+**/*.runs/
+**/*.pr/
+*.py[cod]
+*.exe
+*.dll
+*.obj
+*.o
+*.pdb
+*.wlf
+*.vcd
+*.lock
+transcript
+vsim_stacktrace.vstf
+wlft*
+
+# Keep the small verified demonstration waveforms
+!simulation/waveform.wlf
+!simulation/waveform.vcd
+
+# Local/regenerated runs and output packages
+reports/
+*.zip
+simulation/vsim.wlf
+simulation/wave_view.log
+simulation/verify_wave.log

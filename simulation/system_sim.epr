@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project Path="/system_sim.epr">
+  <Configuration>
+    <Option Name="ActiveSimSet" Val="sim_1" />
+    <Option Name="Project Type" Val="RTL" />
+    <Option Name="SimulationTopModule" Val="tb_afdx_system" />
+    <Option Name="Win_Version" Val="x86" />
+  </Configuration>
+  <FileSets>
+    <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+      <File Path="/afdx_bag_scheduler64.v" />
+      <File Path="/afdx_buffered_vl.v" />
+      <File Path="/afdx_integrity_checker.v" />
+      <File Path="/afdx_packet_pool.v" />
+      <File Path="/afdx_rx_dual.v" />
+      <File Path="/afdx_rx_merge.v" />
+      <File Path="/afdx_shared_tx.v" />
+      <File Path="/afdx_system_top.v" />
+      <File Path="/afdx_udp_rx.v" />
+      <File Path="/afdx_udp_tx_shared.v" />
+      <File Path="/afdx_vl_queue.v" />
+      <File Path="/eth_crc32_byte.v" />
+      <File Path="/eth_mac_rx.v" />
+      <File Path="/eth_mac_tx.v" /></FileSet>
+    <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+      <Config>
+        <Option Name="TargetConstrsFile" Val="/clock.edc" />
+      </Config>
+      <File Path="/clock.edc" /></FileSet>
+    <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
+      <Config>
+        <Option Name="TargetSimulationsFile" Val="/tb_afdx_system.v" />
+      </Config>
+      <File Path="/tb_afdx_system.v" /></FileSet>
+  </FileSets>
+  <Runs>
+    <Run Id="synth_1" Type="Synthesis" SrcSet="sources_1" ConstrsSet="constrs_1" State="current" Parent="" Configuration="">
+      <Option Id="Compilation Flow">Classic Flow</Option>
+      <Option Id="Device">EQ6HL130</Option>
+      <Option Id="LanguageVersion">VERILOG_2001</Option>
+      <Option Id="Package">CSG484_H</Option>
+      <Option Id="Series">eHiChip6</Option>
+      <Option Id="TargetLanguage">VERILOG</Option>
+      <Option Id="TopModule">afdx_system_top</Option>
+    </Run>
+    <Run Id="imple_1" Type="Implementation" SrcSet="sources_1" ConstrsSet="constrs_1" State="current" Parent="" Configuration="" SynthRun="synth_1" />
+  </Runs>
+  <PRFlow>
+    <PartitionDefs />
+    <PRConfigurations />
+  </PRFlow>
+</Project>

@@ -1,0 +1,1 @@
+read_verilog rtl/afdx_wire_core.v rtl/afdx_baseline_core.v rtl/afdx_udp_tx.v rtl/afdx_udp_rx.v rtl/eth_crc32_byte.v rtl/eth_mac_tx.v rtl/eth_mac_rx.v; hierarchy -check -top afdx_wire_core; proc; opt; check -assert; stat

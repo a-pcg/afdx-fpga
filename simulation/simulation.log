@@ -1,0 +1,58 @@
+# do generate.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:10:19 on Oct 26,2026
+# vlog -work work afdx_bag_scheduler64.v afdx_buffered_vl.v afdx_integrity_checker.v afdx_packet_pool.v afdx_rx_dual.v afdx_rx_merge.v afdx_shared_tx.v afdx_system_top.v afdx_udp_rx.v afdx_udp_tx_shared.v afdx_vl_queue.v eth_crc32_byte.v eth_mac_rx.v eth_mac_tx.v tb_afdx_system.v 
+# -- Compiling module afdx_bag_scheduler64
+# -- Compiling module afdx_buffered_vl
+# -- Compiling module afdx_integrity_checker
+# -- Compiling module afdx_packet_pool
+# -- Compiling module afdx_rx_dual
+# -- Compiling module afdx_rx_merge
+# -- Compiling module afdx_shared_tx
+# -- Compiling module afdx_system_top
+# -- Compiling module afdx_udp_rx
+# -- Compiling module afdx_udp_tx_shared
+# -- Compiling module afdx_vl_queue
+# -- Compiling module eth_crc32_byte
+# -- Compiling module eth_mac_rx
+# -- Compiling module eth_mac_tx
+# -- Compiling module tb_afdx_system
+# 
+# Top level modules:
+# 	tb_afdx_system
+# End time: 20:10:20 on Oct 26,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -wlf waveform.wlf -voptargs="+acc" work.tb_afdx_system 
+# Start time: 20:10:20 on Oct 26,2026
+# Loading work.tb_afdx_system
+# Loading work.afdx_system_top
+# Loading work.afdx_shared_tx
+# Loading work.afdx_buffered_vl
+# Loading work.afdx_packet_pool
+# Loading work.afdx_vl_queue
+# Loading work.afdx_bag_scheduler64
+# Loading work.afdx_udp_tx_shared
+# Loading work.eth_mac_tx
+# Loading work.eth_crc32_byte
+# Loading work.afdx_rx_dual
+# Loading work.afdx_rx_merge
+# Loading work.afdx_integrity_checker
+# Loading work.eth_mac_rx
+# Loading work.afdx_udp_rx
+# INIT ok at 2680000
+# CONFIG ok at 2800000
+# FRAME1 sent at 3460000
+# DELIVERED n=1 sn=0 len=17 net=0 time=15010000
+# DELIVERY1 at 15020000 LATENCY1_NS=12220
+# FRAME2 sent at 15520000
+# DELIVERED n=2 sn=0 len=5 net=0 time=24690000
+# DELIVERY2 at 24700000 LATENCY2_NS=9600
+# COMPLIANCE byte_gap_min=4 gap_max=4 wire_bytes=144 frames_on_wire=2
+# COMPLIANCE LINE_MBPS_AT_100MHZ=200 LINE_MBPS_AT_50MHZ=100
+# COMPLIANCE IFG_MIN_CYCLES=210 (>=96 required for 12-byte IFG at 8 clk/byte)
+# PASS tb_afdx_system delivered=2
+# ** Note: $finish    : tb_afdx_system.v(213)
+#    Time: 24900 ns  Iteration: 1  Instance: /tb_afdx_system
+# End time: 20:10:20 on Oct 26,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

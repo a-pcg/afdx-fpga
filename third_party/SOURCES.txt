@@ -1,0 +1,3 @@
+https://codeload.github.com/verilator/verilator/zip/refs/tags/v5.006
+SHA256 4929aee770a305f9f652f0ef8701fbc5b325ca1c8f2330ab4724a8c2d7ff787a
+Only runtime include and license files extracted.
