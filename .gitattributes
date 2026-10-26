@@ -5,7 +5,8 @@
 *.do text eol=lf
 *.md text eol=lf
 *.json text eol=lf
-*.cmd text eol=crlf
+# Preserve Windows launcher CRLF bytes
+*.cmd -text
 *.png binary
 *.pdf binary
 *.docx binary
